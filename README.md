@@ -11,7 +11,7 @@ Il convertitore richiede in input da console i seguenti parametri:
   * input_file -> Stringa che contiene il nome del file da cui il convertitore leggerà i read in formato fastq
   
 ### Output
-Il convertitore stamperà in output sul file "output.fa" i read tradotti in formato fasta che rispettano i vincoli, nella descrizione del read vengono inserite le seguenti informazioni:
+Il convertitore stamperà sul file "output.fa" i read tradotti in formato fasta che rispettano i vincoli, nella descrizione del read vengono inserite le seguenti informazioni:
   * Lunghezza del read tradotto
   * Qualità minima del read
   * L'indice di inizio e l'indice di fine della sottoregione le cui basi hano qualità maggiore o uguale a Q2
