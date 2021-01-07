@@ -77,7 +77,7 @@ for fastq_record in fastq_record_list:
         #se la sottoregione è lunga almeno P% della lungheza del read allora si converte in fasta e si stampa in output
         #altrimenti si passa al read successivo
         #si passa al read successivo anche se non esiste una sottoregione, infatti in questo caso 
-        #max_breadth = 0 - 2 = -2 e P * record_len è sempre maggiore o uguale a zero
+        #max_breadth = 0 - 2 + 1 = -1 e P * record_len è sempre maggiore o uguale a zero
         if max_breadth >= P * record_len: 
             #inserisce in description le informazioni necessarie
             description = "seq_len:" + str(record_len) 
