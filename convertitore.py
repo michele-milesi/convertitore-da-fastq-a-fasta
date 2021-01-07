@@ -37,7 +37,7 @@ while P < 0 or P > 1:   #P deve essere compreso tra 0 e 1 (inclusi)
     try:
         P = float(input("P (in range[0, 1]): "))
     except:
-        print("Must be a number (float or int)")
+        print("Must be a number in range [0, 1]")
 
 file_input_name = input("File to convert: ")
 fastq_records = SeqIO.parse(file_input_name, 'fastq')
